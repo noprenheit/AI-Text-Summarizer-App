@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WDYM-AI</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <h1>WDYM-AI?</h1>
+      <h2>Paste your text here, and let me distill it into an elegant summary, complete with essential keywords.</h2>
+      <p>What Do You Mean AI</p>
+    </header>
+    <main>
+      <div class="container">
+        <div class="text-box">
+          <textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. Min length is 200. Max length is 100,000" maxlength="100000"></textarea>
+          <button id="submit-button" class="submit-button">
+            <span class="submit-button-text">Summarize</span>
+          </button>
+        </div>
+        <header class="header">
+          <h2>Summary</h2>
+        </header>
+        <div class="text-box">
+          <textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here" readonly></textarea>
+        </div>
+        <header class="header">
+          <h2>Keywords</h2>
+        </header>
+        <div class="text-box">
+          <textarea id="keywords" name="keywords" placeholder="Keywords will appear here" readonly></textarea>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
